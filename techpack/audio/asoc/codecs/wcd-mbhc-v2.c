@@ -2069,6 +2069,8 @@ int wcd_mbhc_start(struct wcd_mbhc *mbhc, struct wcd_mbhc_config *mbhc_cfg)
 		}
 #endif
 
+			impedance_det_en = true;
+			
 			#if 0
 			if (of_find_property(card->dev->of_node,
 					     "qcom,usbc-analog-force_detect_gpio",
